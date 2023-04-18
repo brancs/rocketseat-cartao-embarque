@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+:root {
+  --switch-slider: 16px;
+
+  --primary-500: #FF5964;
+  --primary-300: #0B132B;
+  --primary-100: #818AA3;
+
+  --text-light: #FFF;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(168deg, var(--primary-100) 0%, var(--primary-300) 100%);
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+}
+
+.control {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1rem;
+  display: flex;
+  gap: .5rem;
+  align-items: center;
+  color: var(--text-light);
+  text-transform: lowercase;
+}
+
+h1 {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--text-light);
+}
+
+.txt-help {
+  max-width: 300px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--text-light);
+}
+
+.boarding-card {
+  width: 100%;
+  max-width: 328px;
+  margin-bottom: 20px;
+}
+
+.boarding-card .flight,
+.boarding-card .seat,
+.boarding-card .gate {
+  padding: 24px 32px;
+  background-color: white;
+  border: none;
+  border-radius: 24px;
+  color: #1f1f1f; 
+}
+
+.boarding-card.cut-out .flight,
+.boarding-card.cut-out .seat,
+.boarding-card.cut-out .gate { 
+  border-radius: 0;
+}
+
+.boarding-card.cut-out .flight {
+  border-radius: 24px 24px 0 0;
+  background:
+    radial-gradient(circle 16px at bottom left ,#0000 98%,white) bottom left,
+    radial-gradient(circle 16px at bottom right,#0000 98%,white) bottom right;
+  background-size:51%;
+  background-repeat:no-repeat;
+}
+
+.boarding-card.cut-out .seat {
+  background:
+    radial-gradient(circle 16px at top    left ,#0000 98%,white  ) top    left,
+    radial-gradient(circle 16px at top    right,#0000 98%,white ) top    right,
+    radial-gradient(circle 16px at bottom left ,#0000 98%,white) bottom left,
+    radial-gradient(circle 16px at bottom right,#0000 98%,white) bottom right;
+  background-size:51% 51%;
+  background-repeat:no-repeat;
+}
+
+.boarding-card.cut-out .gate {
+  border-radius: 0 0 24px 24px;
+  background:
+    radial-gradient(circle 16px at top    left ,#0000 98%,white  ) top    left,
+    radial-gradient(circle 16px at top    right,#0000 98%,white ) top    right;
+  background-size:51%;
+  background-repeat:no-repeat;
+}
+
+.divider {
+  height: 1px;
+  margin: 0 24px;
+  background-color: white;
+  border-bottom: 1px dashed #ADADAD;
+}
+
+.boarding-card.cut-out .divider {
+  margin: 0 16px;
+}
+
+.txt-small {
+  font-size: 14px;
+  line-height: 1.2;
+  color: #5C5C5C;
+}
+
+.txt-small.time {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+}
+
+.txt-small.time span {
+  vertical-align: top;
+  font-size: 12px;
+}
+
+.txt-data {
+  font-size: 16px;
+  line-height: 1.2;
+  color: #1f1f1f;
+  font-weight: 500;
+}
+
+.txt-data.airport {
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.align-start {
+  text-align: start;
+}
+
+.align-end {
+  text-align: end;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.space-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.boarding-card .flight > div:first-child {
+  margin-bottom: 24px;
+}
+
+.boarding-card .flight .icon i {
+  font-size: 24px;
+}
+
+.boarding-card .gate .stack {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.boarding-card .gate > div:first-child {
+  margin-bottom: 24px;
+}
+
+.badge {
+  width: max-content;
+  padding: 4px 8px;
+  background-color: var(--primary-500);
+  border-radius: 6px;
+  font-weight: 500;
+  color: white;
+}
+
+.qrcode {
+  padding: 10px;
+}
+
+.txt-medium {
+  font-weight: 500;
+}

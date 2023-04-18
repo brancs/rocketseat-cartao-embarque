@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cartão de Embarque</title>
+  <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-icon">
+  <link rel="stylesheet" href="./styles/reset.css">
+  <link rel="stylesheet" href="./styles/main.css">
+  <link rel="stylesheet" href="./styles/switch.css">
+</head>
+<body>
+  <div class="control">
+    <div>Corners</div>
+    <label class="switch">
+      <input id="switch-cutouts" type="checkbox">
+      <span class="slider round"></span>
+    </label>
+  </div>
+  <h1>Cartão de Embarque</h1>
+  <div class="boarding-card">
+    <div class="flight">
+      <div class="space-between middle">
+        <div class="align-start">
+          <div class="txt-small">Voo</div>
+          <div class="txt-data">RS995</div>
+        </div>
+        <div class="align-end">
+          <div class="txt-small">Data</div>
+          <div class="txt-data">23/05/2023</div>
+        </div>
+      </div>
+      <div class="space-between middle">
+        <div class="align-start">
+          <div class="txt-small">São Paulo, Brasil</div>
+          <div class="txt-data airport">gru</div>
+          <div class="txt-small time">17:00</div>
+        </div>
+        <div class="icon"><i class="ph-fill ph-airplane"></i></div>
+        <div class="align-end">
+          <div class="txt-small">São Francisco, EUA</div>
+          <div class="txt-data airport">sfo</div>
+          <div class="txt-small time">04:48<span>+1</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="divider"></div>
+    <div class="seat">
+      <div class="space-between middle">
+        <div class="align-start">
+          <div class="txt-small">Passageiro</div>
+          <div class="txt-data">Vitor Brancalião</div>
+        </div>
+        <div class="align-end">
+          <div class="txt-small">Assento</div>
+          <div class="txt-data">28A</div>
+        </div>
+      </div>
+    </div>
+    <div class="divider"></div>
+    <div class="gate">
+      <div class="space-between">
+        <div class="stack">
+          <div class="align-start">
+            <div class="txt-small">Embarque</div>
+            <div class="badge">16:15</div>
+          </div>
+          <div class="align-start">
+            <div class="txt-small">Terminal</div>
+            <div class="txt-data">2</div>
+          </div>
+          <div class="align-start">
+            <div class="txt-small">Portão</div>
+            <div class="txt-data">15</div>
+          </div>
+        </div>
+        <div>
+          <img src="./assets/qrcode.png" alt="qrcode to my github" class="qrcode">
+          <div class="align-center">
+            <div class="txt-small">Grupo de embarque: 3</div>
+          </div>
+        </div>
+      </div>
+      <div class="align-center">
+        <span class="txt-medium">Atenção:</span> o portão fecha 16:45
+      </div>
+    </div>
+  </div>
+  <p class="txt-help">
+    Qualquer problema procure o balcão de atendimento da sua companhia aérea
+  </p>
+  
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <script src="./scripts/main.js"></script>
+</body>
+</html>
